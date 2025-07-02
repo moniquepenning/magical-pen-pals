@@ -1,0 +1,30 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="mermaidGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e0f7fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b2ebf2;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="url(#mermaidGradient)" stroke="#00838f" stroke-width="8"/>
+  
+  <!-- Ocean bubbles -->
+  <circle cx="120" cy="120" r="8" fill="#4fc3f7" opacity="0.7"/>
+  <circle cx="300" cy="140" r="6" fill="#4fc3f7" opacity="0.6"/>
+  <circle cx="100" cy="280" r="10" fill="#4fc3f7" opacity="0.8"/>
+  <circle cx="320" cy="290" r="7" fill="#4fc3f7" opacity="0.5"/>
+  <circle cx="280" cy="100" r="5" fill="#4fc3f7" opacity="0.6"/>
+  <circle cx="90" cy="200" r="9" fill="#4fc3f7" opacity="0.7"/>
+  
+  <!-- Seashells -->
+  <text x="110" y="110" font-family="Arial" font-size="16" fill="#ff7043">🐚</text>
+  <text x="290" y="320" font-family="Arial" font-size="14" fill="#ff7043">🐚</text>
+  
+  <!-- Main mermaid emoji -->
+  <text x="200" y="220" font-family="Arial" font-size="120" text-anchor="middle" fill="#333">🧜‍♀️</text>
+  
+  <!-- Character name -->
+  <text x="200" y="300" font-family="Arial" font-size="28" text-anchor="middle" fill="#00695c" font-weight="bold">Marina</text>
+  <text x="200" y="330" font-family="Arial" font-size="20" text-anchor="middle" fill="#00838f">the Mermaid</text>
+</svg> 

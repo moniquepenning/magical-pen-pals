@@ -6,12 +6,12 @@ let formData = {};
 // Character data
 const characters = {
     fairy: {
-        name: "Luna the Fairy",
+        name: "CeeCee the Fairy",
         icon: "🧚‍♀️",
         description: "A sparkling fairy who loves nature, flowers, and sharing magical garden adventures!"
     },
     dragon: {
-        name: "Drake the Dragon Superhero", 
+        name: "Drake the Dragon", 
         icon: "🐲",
         description: "A brave dragon superhero who protects the magical realm and loves exciting adventures!"
     },

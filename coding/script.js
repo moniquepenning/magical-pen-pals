@@ -63,10 +63,55 @@ document.addEventListener('DOMContentLoaded', function() {
     initializePricingSelection();
     initializeForm();
     initializeColorOptions();
+    initializeTestimonialSelection();
     
     // Add smooth scrolling for better UX
     document.documentElement.style.scrollBehavior = 'smooth';
 });
+
+// Testimonial selection functionality
+function initializeTestimonialSelection() {
+    const testimonialCards = document.querySelectorAll('.testimonial-card');
+    
+    testimonialCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const character = card.getAttribute('data-character');
+            
+            // Find the corresponding character card
+            const characterCard = document.querySelector(`.character-card[data-character="${character}"]`);
+            
+            if (characterCard) {
+                // Scroll to character section first
+                document.getElementById('characters').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+                
+                // Add a small delay for smooth scrolling, then select character
+                setTimeout(() => {
+                    selectCharacter(character, characterCard);
+                }, 800);
+                
+                // Add visual feedback to clicked testimonial
+                card.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    card.style.transform = '';
+                }, 200);
+            }
+        });
+        
+        // Add hover effect to show it's clickable
+        card.addEventListener('mouseenter', function() {
+            const badge = card.querySelector('.character-badge');
+            badge.style.transform = 'scale(1.05)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            const badge = card.querySelector('.character-badge');
+            badge.style.transform = 'scale(1)';
+        });
+    });
+}
 
 // Character selection functionality
 function initializeCharacterSelection() {
